@@ -1,0 +1,8 @@
+---
+applications:
+- disk_quota: 600M
+  host: isl-cc-demo
+  name: isl-cc-demo
+  domain: mybluemix.net
+  instances: 1
+  memory: 600M

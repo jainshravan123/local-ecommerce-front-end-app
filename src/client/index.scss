@@ -1,0 +1,10 @@
+@import './components/products/products';
+@import './components/generatePdf/generate-pdf';
+@import './components/addNewProduct/add-new-product';
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,9 @@
+application:
+ name: MLHub-UI
+ host: MLHub-UI
+ memory: 435M
+ path: .
+ instances: 1
+ exits:
+ requiredEnv:
+ optionalEnv:
