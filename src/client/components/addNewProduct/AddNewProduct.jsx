@@ -28,6 +28,8 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardMedia from '@material-ui/core/CardMedia'
 
+var apiHost = require('./../../data/api/ApiConfig')
+
 const drawerWidth = 240
 
 const styles = theme => ({
@@ -221,10 +223,10 @@ class AddNewProduct extends React.Component {
         discount: props.singleProduct.discount,
         status: props.singleProduct.status,
         images: props.singleProduct.images,
-        image1: 'http://localhost:3000/' + props.singleProduct.images[0].imageUri,
-        image2: 'http://localhost:3000/' + props.singleProduct.images[1].imageUri,
-        image3: 'http://localhost:3000/' + props.singleProduct.images[2].imageUri,
-        image4: 'http://localhost:3000/' + props.singleProduct.images[3].imageUri
+        image1: apiHost.getApiHost() + '/' + props.singleProduct.images[0].imageUri,
+        image2: apiHost.getApiHost() + '/' + props.singleProduct.images[1].imageUri,
+        image3: apiHost.getApiHost() + '/' + props.singleProduct.images[2].imageUri,
+        image4: apiHost.getApiHost() + '/' + props.singleProduct.images[3].imageUri
       })
     }
 

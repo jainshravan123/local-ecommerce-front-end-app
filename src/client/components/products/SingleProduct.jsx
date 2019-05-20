@@ -8,6 +8,8 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 
+var apiHost = require('./../../data/api/ApiConfig')
+
 const styles = {
   card: {
     maxWidth: 345
@@ -27,7 +29,7 @@ function SingleProduct (props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={props.product.images ? `http://localhost:3000/${props.product.images[0].imageUri}` : 'imagePreview'}
+          image={props.product.images ? `${apiHost.getApiHost()}/${props.product.images[0].imageUri}` : 'imagePreview'}
           title='Contemplative Reptile'
         />
         <CardContent>
